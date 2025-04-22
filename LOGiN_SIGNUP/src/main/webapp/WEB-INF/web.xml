@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <display-name>LOGiN_SIGNUP</display-name>
+
+    <!-- Servlet Definitions -->
+    <servlet>
+        <display-name>LoginController</display-name>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>LoginController</servlet-class>
+    </servlet>
+
+    <servlet>
+        <display-name>UserControllers</display-name>
+        <servlet-name>UserControllers</servlet-name>
+        <servlet-class>UserControllers</servlet-class>
+    </servlet>
+
+    <servlet>
+        <display-name>ModelComponent</display-name>
+        <servlet-name>ModelComponent</servlet-name>
+        <servlet-class>ModelComponent</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mappings -->
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/LoginController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserControllers</servlet-name>
+        <url-pattern>/UserControllers</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ModelComponent</servlet-name>
+        <url-pattern>/ModelComponent</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome File List -->
+    <welcome-file-list>
+        <welcome-file>Login.html</welcome-file>
+    </welcome-file-list>
+</web-app>
